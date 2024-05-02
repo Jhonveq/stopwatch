@@ -37,7 +37,6 @@ const Stopwatch = () => {
             setLaps([0])
     }
     function formatTime(value) {
-        let hours = Math.floor(value / (1000 * 60 * 60)) 
         let minutes = Math.floor(value / (1000 * 60) % 60)
         let seconds = Math.floor(value / (1000) % 60)
         let millisecods = Math.floor((value % 1000) / 10) 
